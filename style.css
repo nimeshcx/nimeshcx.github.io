@@ -1,0 +1,390 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden !important;
+    }
+    body {
+      background-color: #000000;
+      margin: 0;
+    }
+    #main {
+      display: flex;
+      flex-direction: column;
+      margin: 60px;
+      margin: auto;
+    }
+    #cont {
+      padding: 0px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 1px #000000, -8px -8px 16px #000000;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(black, black) padding-box,
+                linear-gradient(to left, rgb(0, 8, 255), rgb(255, 1, 1)) border-box;
+      border-radius: 8px;
+      border: 2.5px solid transparent;
+      width: 70%;
+      height: 9vh;
+      margin: auto;
+      margin-top: 5%;
+      margin-bottom: 20px;
+    }
+    #inp {
+      flex-grow: 1;
+      padding: 10px;
+      margin: 10px;
+      background: transparent;
+      border: none;
+      border-radius: 8px;
+      box-shadow: linear-gradient(145deg, rgb(8, 0, 255), #ff0000);
+      color: #fff;
+      outline: none;
+      min-height:40px;
+    }
+    #cont button {
+      padding: 2.5vh 4.6vh;
+      margin: 1vh;
+      background: linear-gradient(155deg, rgb(17, 0, 255), rgb(255, 0, 8));
+      border: 1px;
+      border-radius: 2px;
+      color: #fff;
+      cursor: pointer;
+    }
+   #cont button:hover {
+      background: linear-gradient(145deg, #ff0000,  rgb(43, 0, 255));
+    }
+    #as {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      margin: auto;
+      justify-content: space-between; 
+    }
+    #as button {
+      background-color: #ffffff; 
+      border: none;
+      padding: 3vh 4.5vh;
+      font-size: 15px;
+      color: #000000; 
+      cursor: pointer;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+#model{
+  background-color: #ffffff; 
+      border: none;
+      padding: 3vh 4.5vh;
+      font-size: 15px;
+      color: #000000; 
+      cursor: pointer;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease-in-out;
+    
+     padding: 0px 0px 0px 20px ;
+}
+    #as button:hover {
+      box-shadow: 15px 15px 30px #0d00ff, -15px -15px 30px #ff0000; /* Adjusted shadow and highlight on hover */
+    }
+    @media only screen and (max-width: 600px) {
+      #cont {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      #main{
+        width: 90%;
+      }
+      #cont button {
+        padding: 15px 15px; /* Adjust button padding for smaller screens */
+      }
+      #as{
+        width: 88%;
+      }
+      #as button{
+       
+        padding: 15px 20px; /* Adjust button padding for smaller screens */
+      }
+      .mod{
+        
+      }
+    }
+    @media only screen and (max-width: 365px){
+      #cont{
+        width: 94%;
+      }
+      #main{
+        width: 94%;
+      }
+      #as{
+        width: 94%;
+      }
+    }
+dialog{
+  background: rgba(29, 29, 29, 1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+margin-top: 20px;
+border: 1px solid rgba(14, 13, 13, 0.3);
+  z-index: 100;
+  background: "Black";
+}
+#sli{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ color: #eeeeee;
+}
+label{
+  font-family: 'Barlow Condensed';
+  
+  font-size: 21px;
+  margin-right: 10px;
+}
+#sli input{
+  border: 1px solid rgb(81, 0, 255);
+  outline: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  background-color: transparent ;
+  color: rgb(255, 0, 0);
+  font-family: 'Barlow Condensed';
+}
+#Apply{
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border: none;
+  color: #000000;
+  font-weight:500;
+  font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ border-radius: 4px;
+}
+#close{
+  float: right;background-color: rgb(255, 255, 255); padding: 5px 10px;
+  border: none;
+  color: #000000;
+  font-weight:500;
+  font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ border-radius: 4px;
+}
+#styles{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  color: rgb(0, 17, 255);
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  flex-wrap: wrap;
+ 
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 720px) {
+  dialog{
+    
+    max-width: 420px;
+  }
+
+  #cont{
+  height: 7vh;
+ }
+}
+#styles{
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .ad{
+  display: flex;
+  flex-direction: row;
+}
+  dialog {
+    max-width: 300px;
+  }
+
+
+#jd {
+   font-size: 14px;
+}
+
+
+
+#styles{
+  align-items: center;
+  justify-content: center;
+}
+}
+#jd{
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;  
+  color: #eeeeee;
+  margin-right: 0;
+  margin-left: 0;
+  background: linear-gradient(black, rgb(0, 0, 0)) padding-box,
+                linear-gradient(to right, rgb(255, 255, 255),#ffffff) border-box;
+    border-radius: 20px;
+    border: 2.5px solid transparent;
+  border-radius: 7px;
+  margin-left: 0px;
+  font-family: 'Barlow Condensed';
+  font-size: 18px;
+  color: white;
+}
+#jd:hover{
+  background: linear-gradient(black, black) padding-box,
+                linear-gradient(to right, rgb(255, 255, 255),#ffffff) border-box;
+    border-radius: 10px;
+    border: 2.5px solid transparent;
+}
+#ow{
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: #eeeeee;
+  background: linear-gradient(black, black) padding-box,
+                linear-gradient(to right, rgb(255, 0, 0), rgb(47, 0, 255)) border-box;
+    border-radius: 10px;
+    border: 2.5px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  border: 2px solid white;
+}
+#ow:hover{
+  background: linear-gradient(black, black) padding-box,
+                linear-gradient(to right, rgb(62, 0, 247),rgb(255, 0, 0)) border-box;
+    border-radius: 10px;
+    border: 2.5px solid transparent;
+}
+#dvv{
+  width: 100%;
+  margin-left: 10px;
+}
+#model{
+  width: 170px;
+  height: 50px;
+  overflow: visible;
+}
+#model option{
+  white-space: normal;
+  padding: 10px;
+font-family: 'Barlow Condensed';
+  line-height: 1.2;
+  font-size: 24px;
+}
+.ad{
+  display: flex;
+  flex-direction: row;
+}
+#grad {
+    background-image: linear-gradient(45deg, rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+  margin-left:15px;
+  font-family: 'Barlow Condensed'
+}
+    
+#imshow progress {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+   height: 15px;
+  width: 250px;
+  margin-top: 20px;
+}
+
+    #imshow h5{
+      display: block;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(17, 0, 255);
+}
+progress::-webkit-progress-value {
+    background-color: rgb(255, 0, 0);
+}
+progress {
+    background-color: rgb(0, 0, 0);
+}
+progress::-moz-progress-bar {
+    background-color: rgb(255, 0, 0); }
+    progress {
+    background: rgb(0, 42, 255);
+}
+
+    #x{
+      width:300px;
+      padding:0px;
+      gap:0px;
+    }
+    #aaa{
+      color: rgb(32, 0, 96);
+      margin-left: 15px;
+      font-family: Arial;
+      letter-spacing: 0.3px;
+    }
+
+    #imshow {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    max-height: 400px;
+    margin-top: 25px;
+}
+
+#imshow img {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 10px;
+    
+}
+#ratio{
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  color: rgb(255, 0, 0);
+  font-family: 'Barlow Condensed';
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  #imshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    max-width: 330px;
+    margin-top: 50px;
+    margin: auto;
+    overflow: auto; 
+    height: 400px;
+
+}
+  #imshow progress{
+margin-top: 5px;
+  
+  }
+
+#imshow img {
+    max-width: 100%; 
+    max-height: 100%; 
+    margin: 10px;
+    object-fit: contain;
+ 
+
+
+
+}
+#img1{
+  padding-top: 115%;
+}
+}
+#main{
+  margin-bottom: 30px;
+}
